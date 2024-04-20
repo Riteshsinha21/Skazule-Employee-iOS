@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "drawable_gray_button.xml",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

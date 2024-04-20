@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FreeSerif.ttf">
+            <string>FreeSerif</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationBar" customModule="Skazule_Employee" customModuleProvider="target">
+            <connections>
+                <outlet property="customLeftBarButton" destination="iO6-dP-Pql" id="d3v-gN-qWw"/>
+                <outlet property="customRightBarButton" destination="Wzz-2u-uJA" id="IgK-dH-Fbt"/>
+                <outlet property="leftBarButtonItem" destination="iO6-dP-Pql" id="5ny-1v-pSm"/>
+                <outlet property="titleLabel" destination="yBA-A7-JSH" id="adt-yf-gZU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="p4W-V2-SVh">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iO6-dP-Pql">
+                    <rect key="frame" x="0.0" y="30" width="44" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="1nY-e1-mLb"/>
+                    </constraints>
+                    <state key="normal" image="back_arrow"/>
+                    <connections>
+                        <action selector="leftBarBtnTapped:" destination="-1" eventType="touchUpInside" id="f7C-Fp-c5p"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBA-A7-JSH">
+                    <rect key="frame" x="49" y="30" width="281" height="34"/>
+                    <fontDescription key="fontDescription" name="FreeSerif" family="FreeSerif" pointSize="18"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzz-2u-uJA" userLabel="CustomRightBarButton">
+                    <rect key="frame" x="340" y="34.5" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="Qb0-1O-JWO"/>
+                        <constraint firstAttribute="height" constant="25" id="pWr-Ix-Ldx"/>
+                    </constraints>
+                    <state key="normal" image="notification"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="uhN-OZ-2kQ"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iO6-dP-Pql" secondAttribute="bottom" id="2ui-BC-hEW"/>
+                <constraint firstItem="yBA-A7-JSH" firstAttribute="bottom" secondItem="iO6-dP-Pql" secondAttribute="bottom" id="Cl0-dH-q5Y"/>
+                <constraint firstItem="iO6-dP-Pql" firstAttribute="top" secondItem="p4W-V2-SVh" secondAttribute="top" constant="30" id="CvV-vA-cKc"/>
+                <constraint firstItem="yBA-A7-JSH" firstAttribute="leading" secondItem="iO6-dP-Pql" secondAttribute="trailing" constant="5" id="Fak-Rf-b5l"/>
+                <constraint firstAttribute="trailing" secondItem="yBA-A7-JSH" secondAttribute="trailing" constant="45" id="OI1-mb-kry"/>
+                <constraint firstItem="iO6-dP-Pql" firstAttribute="leading" secondItem="p4W-V2-SVh" secondAttribute="leading" id="UVV-9B-Ktn">
+                    <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="Wzz-2u-uJA" secondAttribute="trailing" constant="10" id="Wa4-fk-CkL"/>
+                <constraint firstItem="yBA-A7-JSH" firstAttribute="top" secondItem="iO6-dP-Pql" secondAttribute="top" id="Wai-qb-LGG"/>
+                <constraint firstItem="Wzz-2u-uJA" firstAttribute="centerY" secondItem="yBA-A7-JSH" secondAttribute="centerY" id="hL8-ZS-VT2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-218.40000000000001" y="-115.14242878560721"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_arrow" width="25" height="15"/>
+        <image name="notification" width="25" height="25"/>
+    </resources>
+</document>

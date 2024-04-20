@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "password_show_hide.xml",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "layout_round_corner_filled.xml",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

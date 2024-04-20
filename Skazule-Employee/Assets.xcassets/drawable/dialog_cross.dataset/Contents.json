@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "dialog_cross.xml",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
